@@ -39,34 +39,28 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Our Solutions",
+    url: "#solutions",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "About Us",
+    url: "#about",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Initiatives",
+    url: "#initiatives",
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
+    title: "Contact Us",
+    url: "#contact",
   },
   {
     id: "5",
-    title: "Sign in",
-    url: "#login",
+    title: "Get Started",
+    url: "#started",
     onlyMobile: true,
   },
 ];
@@ -128,21 +122,18 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "At Gaspei, we specialize in designing innovative software solutions that drive business growth. With years of experience in crafting scalable and efficient solutions, our team is dedicated to helping companies across industries build reliable, future-proof systems. We believe in a collaborative approach, working closely with clients to understand their unique needs and deliver tailored solutions that empower their success.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Our Vision",
+    text: "To be a leading provider of innovative software architectures that empower businesses to achieve sustainable growth and technological excellence.",
   },
   {
     id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
+    title: "Our Mission",
+    text: "To design and deliver scalable, secure, and efficient software solutions tailored to our clients' needs, driving success through cutting-edge technology and strategic partnerships.",
   },
 ];
 
@@ -244,16 +235,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Custom Architecture",
+    text: "We create software solutions that are tailored to your needs, ensuring scalability, security, and efficiency. Our goal is to help your business grow smoothly.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "System Integration",
+    text: "We make sure all your systems work together seamlessly. This helps maximize efficiency and ensures smooth communication across your business.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +252,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Consulting Services",
+    text: "Our experts offer advice on choosing the right technology, optimizing workflows, and solving complex challenges with smart solutions.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Microservices Architecture",
+    text: "We design microservices architectures that make systems easier to manage, faster, and more scalable. This approach is ideal for modern businesses.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +269,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Custom APIs",
+    text: "We develop custom APIs that connect your systems, allowing for smooth communication between platforms and unlocking new possibilities for your business.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Tech Modernization",
+    text: "We help you upgrade old systems so they stay competitive and efficient. Our goal is to use the latest technologies for better performance and reliability.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

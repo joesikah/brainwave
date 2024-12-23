@@ -514,7 +514,7 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "At Gaspei, we specialize in designing innovative software architectures that drive business growth. With years of experience in crafting scalable and efficient solutions, our team is dedicated to helping companies across industries build reliable, future-proof systems. We believe in a collaborative approach, working closely with clients to understand their unique needs and deliver tailored solutions that empower their success.";
 
 export const collabContent = [
   {
