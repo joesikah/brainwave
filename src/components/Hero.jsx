@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-            Empowering Innovation Through Software &nbsp;Architecture&nbsp;with{" "}
+            Empowering Innovation Through Software Architecture &nbsp;with&nbsp;{" "}
             {` `}
             <span className="inline-block relative">
               Gaspei{" "}
@@ -44,6 +44,7 @@ const Hero = () => {
             Get started
           </Button>
         </div>
+
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
