@@ -26,21 +26,20 @@ import {
   recording03,
   roadmap1,
   roadmap2,
-  roadmap3,
-  roadmap4,
   searchMd,
   slack,
   sliders04,
   telegram,
   twitter,
   yourlogo,
+  biekwanLogo,
 } from "../assets";
 
 export const navigation = [
   {
     id: "0",
-    title: "Our Solutions",
-    url: "#solutions",
+    title: "Our Services",
+    url: "#services",
   },
   {
     id: "1",
@@ -49,18 +48,13 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "Initiatives",
-    url: "#initiatives",
-  },
-  {
-    id: "3",
     title: "Contact Us",
     url: "#contact",
   },
   {
-    id: "5",
+    id: "3",
     title: "Get Started",
-    url: "#started",
+    url: "#",
     onlyMobile: true,
   },
 ];
@@ -88,36 +82,23 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    title: "Biekwan Navigation Architecture",
+    text: "Empower your applications with Biekwan's robust technology for navigation and routing. Biekwan provides accurate and reliable data to developers, enabling them to build innovative location-based services and applications.",
+    date: "Started Sep 2024",
     status: "done",
-    imageUrl: roadmap1,
-    colorful: true,
+    imageUrl: biekwanLogo,
+    colorful: false,
+    link: "#",
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    title: "G-Schools",
+    text: "G-Schools is a school management system that helps schools manage their operations efficiently. With features like attendance tracking, grade management, and parent communication, G-Schools simplifies school administration and enhances the learning experience.",
+    date: "Started Jan 2025",
     status: "progress",
     imageUrl: roadmap2,
-  },
-  {
-    id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap3,
-  },
-  {
-    id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
+    colorful: true,
+    link: "#",
   },
 ];
 
@@ -260,7 +241,7 @@ export const benefits = [
   },
   {
     id: "3",
-    title: "Microservices Architecture",
+    title: "Microservices",
     text: "We design microservices architectures that make systems easier to manage, faster, and more scalable. This approach is ideal for modern businesses.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,

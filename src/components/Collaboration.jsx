@@ -8,6 +8,7 @@ const Collaboration = () => {
   return (
     <Section crosses>
       <div className="container lg:flex">
+        {/* left */}
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">Who We Are</h2>
 
@@ -28,6 +29,7 @@ const Collaboration = () => {
           <Button>Get Started Now</Button>
         </div>
 
+        {/* right */}
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
           <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] xl:w-[38rem] lg:mx-auto">
             {collabText}

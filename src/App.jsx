@@ -1,10 +1,11 @@
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Roadmap from "./components/Roadmap";
+// import Roadmap from "./components/Roadmap";
 // import Pricing from "./components/Pricing";
 // import Services from "./components/Services";
 
@@ -16,9 +17,10 @@ const App = () => {
         <Hero />
         <Benefits />
         <Collaboration />
+        <Contact />
         {/* <Services /> */}
         {/* <Pricing /> */}
-        <Roadmap />
+        {/* <Roadmap /> */}
         <Footer />
       </div>
 

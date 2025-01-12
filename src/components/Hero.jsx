@@ -1,4 +1,4 @@
-import { curve, heroBackground, heroImg } from "../assets";
+import { curve, heroBackground, heroImg, heroVid } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -7,7 +7,6 @@ import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
-import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -40,9 +39,7 @@ const Hero = () => {
             Your partner in building resilient, scalable, and tailored software
             systems.
           </p>
-          <Button href="/pricing" white>
-            Get started
-          </Button>
+          <Button white>Get started</Button>
         </div>
 
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -51,13 +48,26 @@ const Hero = () => {
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
 
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-                <img
+                {/* <img
                   src={heroImg}
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                   width={1024}
                   height={490}
                   alt="AI"
+                /> */}
+                {/* dark overlay */}
+
+                <video
+                  src={heroVid}
+                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
+                  width={1024}
+                  height={490}
+                  muted
+                  autoPlay
+                  loop
                 />
+
+                <div className="w-full h-full absolute bottom-0 bg-black bg-opacity-[50%] rounded-xl" />
 
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
 
@@ -95,7 +105,7 @@ const Hero = () => {
           <BackgroundCircles />
         </div>
 
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
+        {/* <CompanyLogos className="hidden relative z-10 mt-20 lg:block" /> */}
       </div>
 
       <BottomLine />

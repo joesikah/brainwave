@@ -23,6 +23,8 @@ import background from "./background.jpg";
 import gaspeiLogo from "./gaspeiWhite.png";
 import heroImg from "./heroImg.jpg";
 import gaspeiBlank from "./gaspeiBlank.png";
+import biekwanLogo from "./biekwan_blue.png";
+import heroVid from "./videos/video-bg2.mp4";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
@@ -79,6 +81,8 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
+  heroVid,
+  biekwanLogo,
   gaspeiLogo,
   gaspeiBlank,
   heroImg,
