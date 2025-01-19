@@ -33,28 +33,29 @@ import {
   twitter,
   yourlogo,
   biekwanLogo,
+  gaspeiBlank,
 } from "../assets";
 
 export const navigation = [
   {
     id: "0",
     title: "Our Services",
-    url: "#services",
+    url: "services",
   },
   {
     id: "1",
     title: "About Us",
-    url: "#about",
+    url: "about",
   },
   {
     id: "2",
     title: "Contact Us",
-    url: "#contact",
+    url: "contact",
   },
   {
     id: "3",
     title: "Get Started",
-    url: "#",
+    url: "started",
     onlyMobile: true,
   },
 ];
@@ -220,7 +221,7 @@ export const benefits = [
     text: "We create software solutions that are tailored to your needs, ensuring scalability, security, and efficiency. Our goal is to help your business grow smoothly.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    imageUrl: gaspeiBlank,
   },
   {
     id: "1",
@@ -228,7 +229,7 @@ export const benefits = [
     text: "We make sure all your systems work together seamlessly. This helps maximize efficiency and ensures smooth communication across your business.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: gaspeiBlank,
     light: true,
   },
   {
@@ -237,7 +238,7 @@ export const benefits = [
     text: "Our experts offer advice on choosing the right technology, optimizing workflows, and solving complex challenges with smart solutions.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: gaspeiBlank,
   },
   {
     id: "3",
@@ -245,7 +246,7 @@ export const benefits = [
     text: "We design microservices architectures that make systems easier to manage, faster, and more scalable. This approach is ideal for modern businesses.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
+    imageUrl: gaspeiBlank,
     light: true,
   },
   {
@@ -254,7 +255,7 @@ export const benefits = [
     text: "We develop custom APIs that connect your systems, allowing for smooth communication between platforms and unlocking new possibilities for your business.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    imageUrl: gaspeiBlank,
   },
   {
     id: "5",
@@ -262,7 +263,7 @@ export const benefits = [
     text: "We help you upgrade old systems so they stay competitive and efficient. Our goal is to use the latest technologies for better performance and reliability.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: gaspeiBlank,
   },
 ];
 

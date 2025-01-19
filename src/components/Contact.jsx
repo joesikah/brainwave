@@ -1,8 +1,53 @@
-import { Form, Input } from "antd";
+import { Form, Input, notification, Spin } from "antd";
 import Section from "./Section";
 import Button from "./Button";
+import emailjs from "emailjs-com";
+import { useState } from "react";
+import { LoadingOutlined } from "@ant-design/icons";
 
 const Contact = () => {
+  const [form] = Form.useForm();
+  const [isBusy, setIsBusy] = useState(false);
+
+  const onFormSubmit = (form_values) => {
+    const templateParams = {
+      fullName: form_values?.fullName,
+      email: form_values?.email,
+      phone: form_values?.phone,
+      message: form_values?.message,
+    };
+
+    setIsBusy(true);
+
+    emailjs
+      .send(
+        "service_cqj9759",
+        "template_a7242mc",
+        templateParams,
+        "X16elOZ7659c3pxQY"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          notification.success({
+            message: "Yayy, We received it!",
+            description: "Your message has been sent successfully.",
+          });
+          form.resetFields();
+          setIsBusy(false);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          notification.error({
+            message: "Sending Failed",
+            description:
+              "There was an error sending your message. Please try again later.",
+          });
+          setIsBusy(false);
+        }
+      );
+  };
+
   return (
     <Section crosses>
       <div className="container lg:flex">
@@ -19,7 +64,7 @@ const Contact = () => {
         {/* right */}
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
           <div className="">
-            <Form layout="vertical">
+            <Form form={form} layout="vertical" disabled={isBusy} onFinish={onFormSubmit}>
               {/* fullName */}
               <Form.Item
                 label={<p className="text-white">Full Name</p>}
@@ -107,7 +152,17 @@ const Contact = () => {
 
               {/* submit */}
               <Form.Item className="flex justify-end mt-10">
-                <Button>Submit</Button>
+                <Button disabled={isBusy}>
+                  {isBusy ? (
+                    <Spin
+                      indicator={
+                        <LoadingOutlined style={{ fontSize: 24, color: '#fff' }} spin />
+                      }
+                    />
+                  ) : (
+                    "Submit"
+                  )}
+                </Button>
               </Form.Item>
             </Form>
           </div>

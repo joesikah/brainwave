@@ -7,6 +7,7 @@ import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -39,7 +40,15 @@ const Hero = () => {
             Your partner in building resilient, scalable, and tailored software
             systems.
           </p>
-          <Button white>Get started</Button>
+
+          <Link
+            className="cursor-pointer"
+            to="contact"
+            smooth={true}
+            duration={500}
+          >
+            <Button white>Get started</Button>
+          </Link>
         </div>
 
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -85,6 +94,7 @@ const Hero = () => {
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
                     title="Successful launch"
+                    desc='App has been deployed to production.'
                   />
                 </ScrollParallax>
               </div>

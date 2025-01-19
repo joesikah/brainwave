@@ -7,6 +7,7 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const pathname = useLocation();
@@ -36,9 +37,14 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src={gaspeiLogo} width={150} height={40} alt="Brainwave" />
-        </a>
+        <Link
+          className="cursor-pointer block w-[12rem] xl:mr-8"
+          to="hero"
+          smooth={true}
+          duration={500}
+        >
+          <img src={gaspeiLogo} width={150} height={40} alt="" />
+        </Link>
 
         <nav
           className={`${
@@ -47,20 +53,25 @@ const Header = () => {
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
-              <a
-                key={item.id}
-                href={item.url}
-                onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
-                  item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                  item.url === pathname.hash
-                    ? "z-2 lg:text-n-1"
-                    : "lg:text-n-1/50"
-                } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+              <Link
+                className="cursor-pointer"
+                key={item?.id}
+                to={item?.url}
+                smooth={true}
+                duration={500}
               >
-                {item.title}
-              </a>
+                <div
+                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                    item.onlyMobile ? "lg:hidden" : ""
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                    item.url === pathname.hash
+                      ? "z-2 lg:text-n-1"
+                      : "lg:text-n-1/50"
+                  } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+                >
+                  {item.title}
+                </div>
+              </Link>
             ))}
           </div>
 
@@ -68,9 +79,16 @@ const Header = () => {
         </nav>
 
         {/* get started nav */}
-        <Button className="hidden lg:flex" href="#started">
-          Get Started
-        </Button>
+        <Link
+          className="cursor-pointer"
+          to="contact"
+          smooth={true}
+          duration={500}
+        >
+          <Button className="hidden lg:flex">
+            Get Started
+          </Button>
+        </Link>
 
         <Button
           className="ml-auto lg:hidden"

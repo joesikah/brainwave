@@ -80,7 +80,12 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import biekwanIcon from "./biekwan_icon.png";
+import muuvLogo from "./muuvLogo.png";
+
 export {
+  muuvLogo,
+  biekwanIcon,
   heroVid,
   biekwanLogo,
   gaspeiLogo,

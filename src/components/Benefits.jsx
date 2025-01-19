@@ -32,12 +32,6 @@ const Benefits = () => {
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <div className="mb-5">
-                  {/* <img
-                    src={item.iconUrl}
-                    width={48}
-                    height={48}
-                    alt={item.title}
-                  /> */}
                   {i === 0 ? (
                     <div className="h-[48px] w-[48px] bg-blue-500 text-white rounded-[10px] flex justify-center items-center">
                       <MdArchitecture className="h-[35px] w-[35px]" />

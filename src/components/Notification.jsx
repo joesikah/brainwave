@@ -1,7 +1,7 @@
 import { notification1 } from "../assets";
-import { notificationImages } from "../constants";
+// import { notificationImages } from "../constants";
 
-const Notification = ({ className, title }) => {
+const Notification = ({ className, title, desc }) => {
   return (
     <div
       className={`${
@@ -9,18 +9,16 @@ const Notification = ({ className, title }) => {
       } flex items-center p-4 pr-6 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl gap-5`}
     >
       <img
-        src={notification1}
-        width={62}
-        height={62}
+        src="https://cdn-icons-png.flaticon.com/512/251/251978.png"
         alt="image"
-        className="rounded-xl"
+        className="w-12 h-12 object-contain"
       />
 
       <div className="flex-1">
         <h6 className="mb-1 font-semibold text-base">{title}</h6>
 
         <div className="flex items-center justify-between">
-          <ul className="flex -m-0.5">
+          {/* <ul className="flex -m-0.5">
             {notificationImages.map((item, index) => (
               <li
                 key={index}
@@ -35,8 +33,8 @@ const Notification = ({ className, title }) => {
                 />
               </li>
             ))}
-          </ul>
-          <div className="body-2 text-n-13">1m ago</div>
+          </ul> */}
+          <p className="text-[12px] font-[300] text-white italic leading-[18px]">{desc}</p>
         </div>
       </div>
     </div>
